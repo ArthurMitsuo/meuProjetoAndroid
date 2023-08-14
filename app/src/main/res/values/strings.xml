@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aula</string>
+    <string name="greeting">Hello World!</string>
+    <string name="ok">OK</string>
+    <string name="botao">button</string>
+    <string name="botaoLogin">Login</string>
+</resources>
