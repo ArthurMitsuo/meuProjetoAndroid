@@ -2,6 +2,8 @@
     <string name="app_name">Aula</string>
     <string name="greeting">Hello World!</string>
     <string name="ok">OK</string>
-    <string name="botao">button</string>
+    <string name="termos">Accept the terms</string>
     <string name="botaoLogin">Login</string>
+    <string name="hint_nome">Name</string>
+    <string name="hint_senha">Password</string>
 </resources>

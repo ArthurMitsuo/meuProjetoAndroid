@@ -5,13 +5,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import android.widget.Button
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        var textoPrincipal = this.findViewById<TextView>(R.id.textView)
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        /*var textoPrincipal = this.findViewById<TextView>(R.id.textView)
         textoPrincipal.setText("VAI");
 
         var botaoPrincipal = this.findViewById<Button>(R.id.button)
@@ -23,7 +23,16 @@ class MainActivity : AppCompatActivity() {
             }else {
                 textoPrincipal.setText("VAI")
             }
-        }
+        }*/
+    /*
+        val languageName:String = "Kotlin"; //constante
+        var laguageName: String = null;  //não funciona/compila
+        var laguageName: String? = null; //funciona
+    */
+    var button1:Button = findViewById(R.id.button);
+    button1.setOnClickListener{
+        Toast.makeText(this, "Botao Clicado", Toast.LENGTH_LONG).show();
+    }
 
     }
 }

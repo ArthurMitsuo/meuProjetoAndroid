@@ -3,6 +3,8 @@
     <string name="app_name">Aula</string>
     <string name="greeting">Olá, Mundo!</string>
     <string name="ok">OK</string>
-    <string name="botao">botão</string>
+    <string name="termos">Aceito os termos</string>
     <string name="botaoLogin">Entrar</string>
+    <string name="hint_nome">Nome</string>
+    <string name="hint_senha">Senha</string>
 </resources>
