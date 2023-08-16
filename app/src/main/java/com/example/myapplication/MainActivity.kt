@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import android.widget.Button
+import android.widget.CheckBox
+import android.widget.ImageView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -29,10 +31,42 @@ class MainActivity : AppCompatActivity() {
         var laguageName: String = null;  //não funciona/compila
         var laguageName: String? = null; //funciona
     */
-    var button1:Button = findViewById(R.id.button);
-    button1.setOnClickListener{
-        Toast.makeText(this, "Botao Clicado", Toast.LENGTH_LONG).show();
+        var button1:Button = findViewById(R.id.button);
+        var doido:Int = 1;
+
+
+        button1.setOnClickListener{
+            Toast.makeText(this, "Clicou", Toast.LENGTH_LONG).show();
+
+
+
+            var imagem:ImageView = findViewById(R.id.imageView2);
+            var checkBox:CheckBox = findViewById(R.id.checkBox2)
+            val marcado = checkBox.isChecked
+
+            if(marcado){
+                imagem.setImageResource(R.mipmap.pablo_escobar)
+
+            }else{
+                imagem.setImageResource(R.mipmap.albert_hoffman)
+            }
+
+
+        }
+
+
     }
 
+    fun clicouTrocou(view: View){
+        var checkBox:CheckBox = findViewById(R.id.checkBox2)
+        val marcado:Boolean = checkBox.isChecked;
+        var imagem:ImageView = findViewById(R.id.imageView2);
+
+        if(marcado){
+            imagem.setImageResource(R.mipmap.pablo_escobar)
+
+        }else{
+            imagem.setImageResource(R.mipmap.albert_hoffman)
+        }
     }
 }
