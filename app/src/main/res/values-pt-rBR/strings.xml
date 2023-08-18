@@ -7,4 +7,7 @@
     <string name="botaoLogin">Entrar</string>
     <string name="hint_nome">Nome</string>
     <string name="hint_senha">Senha</string>
+    <string name="MudaActivityPara3">Activity 3</string>
+    <string name="MudaActivityPara2">Activity 2</string>
+    <string name="NumeroRandom">Fechar</string>
 </resources>

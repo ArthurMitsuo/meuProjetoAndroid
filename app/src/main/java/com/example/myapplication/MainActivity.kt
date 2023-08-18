@@ -8,12 +8,14 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.Toast
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*var textoPrincipal = this.findViewById<TextView>(R.id.textView)
+        /*
+        var textoPrincipal = this.findViewById<TextView>(R.id.textView)
         textoPrincipal.setText("VAI");
 
         var botaoPrincipal = this.findViewById<Button>(R.id.button)
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         var doido:Int = 1;
 
 
-        button1.setOnClickListener{
+        /*button1.setOnClickListener{
             Toast.makeText(this, "Clicou", Toast.LENGTH_LONG).show();
 
 
@@ -52,11 +54,15 @@ class MainActivity : AppCompatActivity() {
             }
 
 
-        }
+        }*/
 
 
     }
-
+    fun proximaTela(view:View){
+        val intent = Intent(this, MainActivity2::class.java)
+        // start your next activity
+        startActivity(intent)
+    }
     fun clicouTrocou(view: View){
         var checkBox:CheckBox = findViewById(R.id.checkBox2)
         val marcado:Boolean = checkBox.isChecked;
